@@ -10,6 +10,8 @@ df["Elev"] = abs(df["Elev"])
 
 app = Dash(__name__)
 
+server = app.server
+
 app.layout = html.Div([
     html.Header("My Volcano App", style={"textAlign": "center"}),
     dcc.Dropdown(id="mydropdown",
