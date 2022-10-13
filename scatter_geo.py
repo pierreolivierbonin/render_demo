@@ -10,6 +10,7 @@ df.dropna(inplace=True)
 df["Elev"] = abs(df["Elev"])
 
 app = Dash(__name__)
+server = app.server
 
 
 app.layout = html.Div([
